@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>What's Special Today? | Discover Daily Special Days</title>
+    <meta name="title" content="What's Special Today? | Discover Daily Special Days">
+    <meta name="description" content="Discover what makes today special! Explore international days, awareness days, cultural celebrations, and fun observances for every day of the year.">
+    <meta name="keywords" content="special days, international days, awareness days, world days, today, calendar, celebrations">
+    <meta name="author" content="What's Special Today?">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="What's Special Today? | Discover Daily Special Days">
+    <meta property="og:description" content="Discover what makes today special! Explore international days, awareness days, cultural celebrations, and fun observances for every day of the year.">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="What's Special Today? | Discover Daily Special Days">
+    <meta property="twitter:description" content="Discover what makes today special! Explore international days, awareness days, cultural celebrations, and fun observances for every day of the year.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "What's Special Today?",
+        "description": "Discover what makes every day special with international days, awareness days, and cultural celebrations.",
+        "url": ""
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>✨ What's Special Today?</h1>
+        <p>Discover what makes every day unique</p>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Loading State -->
+        <div id="loading" class="card">
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+        </div>
+        
+        <!-- Special Day Content -->
+        <div id="special-day-content" class="card" style="display: none;"></div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ | Explore every day of the year</p>
+        <p><a href="day.html">Browse All Days</a></p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Show content container once loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const loading = document.getElementById('loading');
+            const content = document.getElementById('special-day-content');
+            
+            // Wait a moment for data to load, then show content
+            setTimeout(function() {
+                if (content.innerHTML !== '') {
+                    loading.style.display = 'none';
+                    content.style.display = 'block';
+                }
+            }, 100);
+        });
+    </script>
+</body>
+</html>
